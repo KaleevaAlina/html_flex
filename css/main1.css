@@ -1,0 +1,108 @@
+* {
+     margin: 0;
+}
+.all {
+    height: 200px;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;  /* свойство для компьютерной версии */
+    justify-content: space-around;
+    align-items: center;
+}
+.all1 {
+    height: 320px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;  /* свойство для адаптации под моб */
+    justify-content: space-around;
+    align-items: center;
+}
+/* Это стили для выпадающего меню */
+body {
+    font: 14px 'Verdana';
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+.cl{
+    display: block;
+	float: right;
+    padding: 7px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+	margin: -30px;
+}
+
+
+ul.menu > li > a:hover {
+    background-color: DarkSalmon;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid coral;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+	background-color: DarkSalmon;
+}
+
+/* Это позволит показывать подменю при наведении. */
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.but {
+	background: linear-gradient(to top, #911E42 20%, #A52A2A 50%, #911E42 80%); 
+    font-family: 'Playfair Display', serif;
+    color: #FFFDD0;  
+	width: 180px;
+    height: 40px;
+    font-size: 14pt; 
+    border-radius: 5px; 
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    cursor: pointer;
+}
+
+/* .blo1 {
+    align-self: flex-start;
+    order: 1;
+} */
